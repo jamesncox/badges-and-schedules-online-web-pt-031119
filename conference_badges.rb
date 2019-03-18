@@ -1,5 +1,5 @@
 # Write your code here.
-
+require 'pry'
 def badge_maker(name)
   return "Hello, my name is #{name}."
 end
@@ -19,6 +19,7 @@ end
 def printer(attendees)
   batch_badge_creator(attendees).each do |badge|
     puts badge
+    binding.pry
   end
   assign_rooms(attendees).each do |assignment|
     puts assignment
